@@ -14,6 +14,7 @@
 		D951DE0B241C87DC005E3851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D951DE0A241C87DC005E3851 /* Assets.xcassets */; };
 		D951DE0E241C87DC005E3851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D951DE0C241C87DC005E3851 /* LaunchScreen.storyboard */; };
 		D951DE19241C87DC005E3851 /* Swift02_StopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951DE18241C87DC005E3851 /* Swift02_StopwatchTests.swift */; };
+		D951DE24241CAA9D005E3851 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951DE23241CAA9D005E3851 /* Stopwatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		D951DE14241C87DC005E3851 /* Swift02-StopwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift02-StopwatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D951DE18241C87DC005E3851 /* Swift02_StopwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift02_StopwatchTests.swift; sourceTree = "<group>"; };
 		D951DE1A241C87DC005E3851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D951DE23241CAA9D005E3851 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				D951DE0A241C87DC005E3851 /* Assets.xcassets */,
 				D951DE0C241C87DC005E3851 /* LaunchScreen.storyboard */,
 				D951DE0F241C87DC005E3851 /* Info.plist */,
+				D951DE23241CAA9D005E3851 /* Stopwatch.swift */,
 			);
 			path = "Swift02-Stopwatch";
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D951DE06241C87D7005E3851 /* ViewController.swift in Sources */,
+				D951DE24241CAA9D005E3851 /* Stopwatch.swift in Sources */,
 				D951DE02241C87D7005E3851 /* AppDelegate.swift in Sources */,
 				D951DE04241C87D7005E3851 /* SceneDelegate.swift in Sources */,
 			);
