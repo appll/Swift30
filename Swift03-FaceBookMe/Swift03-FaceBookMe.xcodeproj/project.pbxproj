@@ -14,6 +14,9 @@
 		D9B45EAB241F55F500227B96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B45EAA241F55F500227B96 /* Assets.xcassets */; };
 		D9B45EAE241F55F500227B96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B45EAC241F55F500227B96 /* LaunchScreen.storyboard */; };
 		D9B45EB9241F55F500227B96 /* Swift03_FaceBookMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B45EB8241F55F500227B96 /* Swift03_FaceBookMeTests.swift */; };
+		D9B45EC7241F9A0700227B96 /* TableKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B45EC4241F9A0700227B96 /* TableKeys.swift */; };
+		D9B45EC8241F9A0700227B96 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B45EC5241F9A0700227B96 /* UIColor+Extension.swift */; };
+		D9B45EC9241F9A0700227B96 /* Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B45EC6241F9A0700227B96 /* Specs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		D9B45EB4241F55F500227B96 /* Swift03-FaceBookMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift03-FaceBookMeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B45EB8241F55F500227B96 /* Swift03_FaceBookMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift03_FaceBookMeTests.swift; sourceTree = "<group>"; };
 		D9B45EBA241F55F500227B96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9B45EC4241F9A0700227B96 /* TableKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableKeys.swift; sourceTree = "<group>"; };
+		D9B45EC5241F9A0700227B96 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D9B45EC6241F9A0700227B96 /* Specs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		D9B45EA0241F55EF00227B96 /* Swift03-FaceBookMe */ = {
 			isa = PBXGroup;
 			children = (
+				D9B45EC3241F99F500227B96 /* other */,
 				D9B45EA1241F55EF00227B96 /* AppDelegate.swift */,
 				D9B45EA3241F55EF00227B96 /* SceneDelegate.swift */,
 				D9B45EA5241F55EF00227B96 /* ViewController.swift */,
@@ -97,6 +104,16 @@
 				D9B45EBA241F55F500227B96 /* Info.plist */,
 			);
 			path = "Swift03-FaceBookMeTests";
+			sourceTree = "<group>";
+		};
+		D9B45EC3241F99F500227B96 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				D9B45EC6241F9A0700227B96 /* Specs.swift */,
+				D9B45EC4241F9A0700227B96 /* TableKeys.swift */,
+				D9B45EC5241F9A0700227B96 /* UIColor+Extension.swift */,
+			);
+			name = other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B45EC9241F9A0700227B96 /* Specs.swift in Sources */,
 				D9B45EA6241F55EF00227B96 /* ViewController.swift in Sources */,
 				D9B45EA2241F55EF00227B96 /* AppDelegate.swift in Sources */,
+				D9B45EC7241F9A0700227B96 /* TableKeys.swift in Sources */,
 				D9B45EA4241F55EF00227B96 /* SceneDelegate.swift in Sources */,
+				D9B45EC8241F9A0700227B96 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
