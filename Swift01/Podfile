@@ -6,7 +6,8 @@ target 'Swift01' do
   use_frameworks!
 
   # Pods for Swift01
-
+  pod 'SnapKit', '~> 5.0.1'
+  
   target 'Swift01Tests' do
     inherit! :search_paths
     # Pods for testing
