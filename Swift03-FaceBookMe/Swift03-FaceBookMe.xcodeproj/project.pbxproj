@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9ADCAAB2420AD2F00AE4853 /* TTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ADCAA92420AD2F00AE4853 /* TTViewController.swift */; };
+		D9ADCAAC2420AD2F00AE4853 /* TTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9ADCAAA2420AD2F00AE4853 /* TTViewController.xib */; };
 		D9B45EA2241F55EF00227B96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B45EA1241F55EF00227B96 /* AppDelegate.swift */; };
 		D9B45EA4241F55EF00227B96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B45EA3241F55EF00227B96 /* SceneDelegate.swift */; };
 		D9B45EA6241F55EF00227B96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B45EA5241F55EF00227B96 /* ViewController.swift */; };
@@ -17,6 +19,10 @@
 		D9B45EC7241F9A0700227B96 /* TableKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B45EC4241F9A0700227B96 /* TableKeys.swift */; };
 		D9B45EC8241F9A0700227B96 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B45EC5241F9A0700227B96 /* UIColor+Extension.swift */; };
 		D9B45EC9241F9A0700227B96 /* Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B45EC6241F9A0700227B96 /* Specs.swift */; };
+		D9B45ECB241F9A9600227B96 /* FBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B45ECA241F9A9600227B96 /* FBBaseViewController.swift */; };
+		D9B45ECD241F9ABD00227B96 /* FBMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B45ECC241F9ABD00227B96 /* FBMeViewController.swift */; };
+		D9B45ECF241F9B6B00227B96 /* FBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B45ECE241F9B6B00227B96 /* FBTableViewCell.swift */; };
+		D9B45ED1241F9D5700227B96 /* FBMeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B45ED0241F9D5700227B96 /* FBMeUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9ADCAA92420AD2F00AE4853 /* TTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTViewController.swift; sourceTree = "<group>"; };
+		D9ADCAAA2420AD2F00AE4853 /* TTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TTViewController.xib; sourceTree = "<group>"; };
 		D9B45E9E241F55EF00227B96 /* Swift03-FaceBookMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift03-FaceBookMe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B45EA1241F55EF00227B96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9B45EA3241F55EF00227B96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +52,10 @@
 		D9B45EC4241F9A0700227B96 /* TableKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableKeys.swift; sourceTree = "<group>"; };
 		D9B45EC5241F9A0700227B96 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		D9B45EC6241F9A0700227B96 /* Specs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specs.swift; sourceTree = "<group>"; };
+		D9B45ECA241F9A9600227B96 /* FBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBBaseViewController.swift; sourceTree = "<group>"; };
+		D9B45ECC241F9ABD00227B96 /* FBMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeViewController.swift; sourceTree = "<group>"; };
+		D9B45ECE241F9B6B00227B96 /* FBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBTableViewCell.swift; sourceTree = "<group>"; };
+		D9B45ED0241F9D5700227B96 /* FBMeUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBMeUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +105,10 @@
 				D9B45EAA241F55F500227B96 /* Assets.xcassets */,
 				D9B45EAC241F55F500227B96 /* LaunchScreen.storyboard */,
 				D9B45EAF241F55F500227B96 /* Info.plist */,
+				D9B45ECA241F9A9600227B96 /* FBBaseViewController.swift */,
+				D9B45ECC241F9ABD00227B96 /* FBMeViewController.swift */,
+				D9B45ECE241F9B6B00227B96 /* FBTableViewCell.swift */,
+				D9B45ED0241F9D5700227B96 /* FBMeUser.swift */,
 			);
 			path = "Swift03-FaceBookMe";
 			sourceTree = "<group>";
@@ -112,6 +128,8 @@
 				D9B45EC6241F9A0700227B96 /* Specs.swift */,
 				D9B45EC4241F9A0700227B96 /* TableKeys.swift */,
 				D9B45EC5241F9A0700227B96 /* UIColor+Extension.swift */,
+				D9ADCAA92420AD2F00AE4853 /* TTViewController.swift */,
+				D9ADCAAA2420AD2F00AE4853 /* TTViewController.xib */,
 			);
 			name = other;
 			sourceTree = "<group>";
@@ -197,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9ADCAAC2420AD2F00AE4853 /* TTViewController.xib in Resources */,
 				D9B45EAE241F55F500227B96 /* LaunchScreen.storyboard in Resources */,
 				D9B45EAB241F55F500227B96 /* Assets.xcassets in Resources */,
 				D9B45EA9241F55EF00227B96 /* Main.storyboard in Resources */,
@@ -218,10 +237,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9B45EC9241F9A0700227B96 /* Specs.swift in Sources */,
+				D9B45ECB241F9A9600227B96 /* FBBaseViewController.swift in Sources */,
+				D9B45ED1241F9D5700227B96 /* FBMeUser.swift in Sources */,
 				D9B45EA6241F55EF00227B96 /* ViewController.swift in Sources */,
 				D9B45EA2241F55EF00227B96 /* AppDelegate.swift in Sources */,
+				D9B45ECD241F9ABD00227B96 /* FBMeViewController.swift in Sources */,
+				D9B45ECF241F9B6B00227B96 /* FBTableViewCell.swift in Sources */,
 				D9B45EC7241F9A0700227B96 /* TableKeys.swift in Sources */,
 				D9B45EA4241F55EF00227B96 /* SceneDelegate.swift in Sources */,
+				D9ADCAAB2420AD2F00AE4853 /* TTViewController.swift in Sources */,
 				D9B45EC8241F9A0700227B96 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
