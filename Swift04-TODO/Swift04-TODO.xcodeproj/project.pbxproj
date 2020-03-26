@@ -13,7 +13,12 @@
 		D98611912428A49000879BF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D986118F2428A49000879BF1 /* Main.storyboard */; };
 		D98611932428A49400879BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98611922428A49400879BF1 /* Assets.xcassets */; };
 		D98611962428A49400879BF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98611942428A49400879BF1 /* LaunchScreen.storyboard */; };
-		D98611A12428A49500879BF1 /* Swift04_TODOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98611A02428A49500879BF1 /* Swift04_TODOTests.swift */; };
+		D98611AC2428A4F200879BF1 /* ItemListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98611AB2428A4F200879BF1 /* ItemListViewControllerTests.swift */; };
+		D98611AE2428AD8B00879BF1 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98611AD2428AD8B00879BF1 /* ItemListViewController.swift */; };
+		D98611B02428B2DA00879BF1 /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98611AF2428B2DA00879BF1 /* ItemListDataProvider.swift */; };
+		D98611B22429951600879BF1 /* ItemListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98611B12429951600879BF1 /* ItemListDataProviderTests.swift */; };
+		D98611B42429B04400879BF1 /* ItemListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98611B32429B04400879BF1 /* ItemListDataManager.swift */; };
+		D98611B62429B17000879BF1 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98611B52429B17000879BF1 /* ToDoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +41,13 @@
 		D98611952428A49400879BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D98611972428A49400879BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D986119C2428A49500879BF1 /* Swift04-TODOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift04-TODOTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D98611A02428A49500879BF1 /* Swift04_TODOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift04_TODOTests.swift; sourceTree = "<group>"; };
 		D98611A22428A49500879BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98611AB2428A4F200879BF1 /* ItemListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTests.swift; sourceTree = "<group>"; };
+		D98611AD2428AD8B00879BF1 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
+		D98611AF2428B2DA00879BF1 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
+		D98611B12429951600879BF1 /* ItemListDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTests.swift; sourceTree = "<group>"; };
+		D98611B32429B04400879BF1 /* ItemListDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataManager.swift; sourceTree = "<group>"; };
+		D98611B52429B17000879BF1 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,10 @@
 				D98611892428A49000879BF1 /* AppDelegate.swift */,
 				D986118B2428A49000879BF1 /* SceneDelegate.swift */,
 				D986118D2428A49000879BF1 /* ViewController.swift */,
+				D98611B52429B17000879BF1 /* ToDoItem.swift */,
+				D98611AD2428AD8B00879BF1 /* ItemListViewController.swift */,
+				D98611AF2428B2DA00879BF1 /* ItemListDataProvider.swift */,
+				D98611B32429B04400879BF1 /* ItemListDataManager.swift */,
 				D986118F2428A49000879BF1 /* Main.storyboard */,
 				D98611922428A49400879BF1 /* Assets.xcassets */,
 				D98611942428A49400879BF1 /* LaunchScreen.storyboard */,
@@ -93,8 +107,9 @@
 		D986119F2428A49500879BF1 /* Swift04-TODOTests */ = {
 			isa = PBXGroup;
 			children = (
-				D98611A02428A49500879BF1 /* Swift04_TODOTests.swift */,
 				D98611A22428A49500879BF1 /* Info.plist */,
+				D98611AB2428A4F200879BF1 /* ItemListViewControllerTests.swift */,
+				D98611B12429951600879BF1 /* ItemListDataProviderTests.swift */,
 			);
 			path = "Swift04-TODOTests";
 			sourceTree = "<group>";
@@ -201,6 +216,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D986118E2428A49000879BF1 /* ViewController.swift in Sources */,
+				D98611B02428B2DA00879BF1 /* ItemListDataProvider.swift in Sources */,
+				D98611B62429B17000879BF1 /* ToDoItem.swift in Sources */,
+				D98611B42429B04400879BF1 /* ItemListDataManager.swift in Sources */,
+				D98611AE2428AD8B00879BF1 /* ItemListViewController.swift in Sources */,
 				D986118A2428A49000879BF1 /* AppDelegate.swift in Sources */,
 				D986118C2428A49000879BF1 /* SceneDelegate.swift in Sources */,
 			);
@@ -210,7 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98611A12428A49500879BF1 /* Swift04_TODOTests.swift in Sources */,
+				D98611AC2428A4F200879BF1 /* ItemListViewControllerTests.swift in Sources */,
+				D98611B22429951600879BF1 /* ItemListDataProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

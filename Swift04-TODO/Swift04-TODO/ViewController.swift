@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    func makeHeadline(_ contetn: String) -> String{
+        return "This Is A Test Headline"
+    }
 
 }
 
