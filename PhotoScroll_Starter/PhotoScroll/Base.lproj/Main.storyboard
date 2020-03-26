@@ -100,6 +100,10 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="imageView" destination="Ve5-7J-0me" id="iCm-X3-KJI"/>
+                        <outlet property="imageViewBottom" destination="LyU-R3-Kka" id="uwc-h8-CUu"/>
+                        <outlet property="imageViewLeading" destination="YOR-g3-hjy" id="o3c-Wv-iy0"/>
+                        <outlet property="imageViewTop" destination="QgV-Uu-6jT" id="mPi-Qg-YrN"/>
+                        <outlet property="imageViewTrailing" destination="zNU-gT-G5k" id="nYZ-1b-01E"/>
                         <outlet property="scrollView" destination="1rH-OU-xuy" id="YvI-Ho-jnc"/>
                     </connections>
                 </viewController>
