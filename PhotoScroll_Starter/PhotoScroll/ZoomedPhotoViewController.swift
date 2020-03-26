@@ -30,11 +30,32 @@ import UIKit
 
 class ZoomedPhotoViewController: UIViewController {
   @IBOutlet weak var imageView: UIImageView!
+  @IBOutlet weak var scrollView: UIScrollView!
+  
   var photoName: String?
   
   override func viewDidLoad() {
     if let photoName = photoName {
       imageView.image = UIImage(named: photoName)
     }
+  }
+  
+  override func viewWillLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    initScale()
+  }
+  
+  func initScale() {
+    let widthScale = view.frame.width / imageView.frame.width
+    let heightScale = view.frame.height / imageView.frame.height
+    let minScale = min(widthScale, heightScale)
+    scrollView.minimumZoomScale = minScale
+    scrollView.zoomScale = minScale
+  }
+}
+
+extension ZoomedPhotoViewController: UIScrollViewDelegate {
+  func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+    return imageView
   }
 }
