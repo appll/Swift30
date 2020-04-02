@@ -30,6 +30,7 @@ import UIKit
 
 class PhotoDetailViewController: UIViewController {
   
+  @IBOutlet weak var scrollView: UIScrollView!
   @IBOutlet weak var imageView: UIImageView!
   var imageName: String?
   
@@ -39,17 +40,35 @@ class PhotoDetailViewController: UIViewController {
       imageView.image = UIImage(named: imgName);
     }
     // Do any additional setup after loading the view.
+    self.addObservers()
   }
   
+  func addObservers() {
+    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDismiss(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+  }
   
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destination.
-   // Pass the selected object to the new view controller.
-   }
-   */
+  @objc func keyboardWillShow(_ notification: NSNotification){
+    self.adjustKeyboardBusiness(true, notification)
+  }
+  
+  @objc func keyboardWillDismiss(_ notification: NSNotification) {
+    self.adjustKeyboardBusiness(false, notification)
+  }
+  
+  func adjustKeyboardBusiness(_ show: Bool, _ notification: NSNotification) {
+    guard let userInfo = notification.userInfo,
+      let keyboardFrame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue
+      else {
+        return
+    }
+    let adjustHeight = (keyboardFrame.cgRectValue.height + 20) * (show ? 1 : -1)
+    scrollView.contentInset.bottom += adjustHeight
+    scrollView.verticalScrollIndicatorInsets.bottom += adjustHeight
+  }
+  
+  @IBAction func dissKeyboardAction(_ sender: UITapGestureRecognizer) {
+    self.view.endEditing(true)
+  }
   
 }
