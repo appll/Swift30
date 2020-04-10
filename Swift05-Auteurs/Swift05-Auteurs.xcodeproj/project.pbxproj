@@ -18,6 +18,7 @@
 		D9133F91243C741E00F34BF6 /* AuteursListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9133F90243C741E00F34BF6 /* AuteursListViewController.swift */; };
 		D9133F93243C7A5900F34BF6 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9133F92243C7A5900F34BF6 /* Film.swift */; };
 		D9133F95243C7AC600F34BF6 /* Auteur.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9133F94243C7AC600F34BF6 /* Auteur.swift */; };
+		D952AA95243ECFBE001BE118 /* AuteursListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D952AA94243ECFBE001BE118 /* AuteursListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		D9133F90243C741E00F34BF6 /* AuteursListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteursListViewController.swift; sourceTree = "<group>"; };
 		D9133F92243C7A5900F34BF6 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		D9133F94243C7AC600F34BF6 /* Auteur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auteur.swift; sourceTree = "<group>"; };
+		D952AA94243ECFBE001BE118 /* AuteursListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteursListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				D9133F90243C741E00F34BF6 /* AuteursListViewController.swift */,
 				D9133F92243C7A5900F34BF6 /* Film.swift */,
 				D9133F94243C7AC600F34BF6 /* Auteur.swift */,
+				D952AA94243ECFBE001BE118 /* AuteursListCell.swift */,
 			);
 			path = "Swift05-Auteurs";
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D952AA95243ECFBE001BE118 /* AuteursListCell.swift in Sources */,
 				D9133F93243C7A5900F34BF6 /* Film.swift in Sources */,
 				D9133F95243C7AC600F34BF6 /* Auteur.swift in Sources */,
 				D9133F70243C70C000F34BF6 /* ViewController.swift in Sources */,

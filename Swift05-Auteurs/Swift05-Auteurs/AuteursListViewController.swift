@@ -22,6 +22,9 @@ class AuteursListViewController: UIViewController {
             navigationItem.largeTitleDisplayMode = .automatic
         }
         auteurs = Auteurs.auteursModel()
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.beginUpdates()
     }
 }
 
@@ -31,9 +34,14 @@ extension AuteursListViewController: UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AuteursListCell", for: indexPath) as! AuteursListCell
+        cell.contentLabel.textColor = UIColor(red:0.75, green:0.75, blue:0.75, alpha:1.0)
+        cell.headImageView.layer.cornerRadius = cell.headImageView.frame.width / 2.0
         if let auteur = auteurs?.auteurs[indexPath.row] {
-            cell.textLabel?.text = auteur.bio
+            cell.contentLabel.text = auteur.bio
+            cell.headImageView.image = UIImage(named: auteur.image)
+            cell.nameLabel.text = auteur.name
+            cell.sourceLabel.text = auteur.source
         }
         return cell
     }
@@ -43,5 +51,9 @@ extension AuteursListViewController: UITableViewDataSource, UITableViewDelegate 
         vc.view.backgroundColor = .white
         vc.title = "111"
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
 }
