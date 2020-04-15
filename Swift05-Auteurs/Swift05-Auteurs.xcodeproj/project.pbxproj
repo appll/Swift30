@@ -19,6 +19,8 @@
 		D9133F93243C7A5900F34BF6 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9133F92243C7A5900F34BF6 /* Film.swift */; };
 		D9133F95243C7AC600F34BF6 /* Auteur.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9133F94243C7AC600F34BF6 /* Auteur.swift */; };
 		D952AA95243ECFBE001BE118 /* AuteursListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D952AA94243ECFBE001BE118 /* AuteursListCell.swift */; };
+		D9AD35622446ED4E005EFBE6 /* AuteurDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD35612446ED4E005EFBE6 /* AuteurDetailViewController.swift */; };
+		D9AD35642446EE8F005EFBE6 /* AuteurFilmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD35632446EE8F005EFBE6 /* AuteurFilmCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		D9133F92243C7A5900F34BF6 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		D9133F94243C7AC600F34BF6 /* Auteur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auteur.swift; sourceTree = "<group>"; };
 		D952AA94243ECFBE001BE118 /* AuteursListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteursListCell.swift; sourceTree = "<group>"; };
+		D9AD35612446ED4E005EFBE6 /* AuteurDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurDetailViewController.swift; sourceTree = "<group>"; };
+		D9AD35632446EE8F005EFBE6 /* AuteurFilmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurFilmCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +102,11 @@
 				D9133F79243C70C600F34BF6 /* Info.plist */,
 				D9133F8D243C70F000F34BF6 /* Resources */,
 				D9133F90243C741E00F34BF6 /* AuteursListViewController.swift */,
+				D9AD35612446ED4E005EFBE6 /* AuteurDetailViewController.swift */,
 				D9133F92243C7A5900F34BF6 /* Film.swift */,
 				D9133F94243C7AC600F34BF6 /* Auteur.swift */,
 				D952AA94243ECFBE001BE118 /* AuteursListCell.swift */,
+				D9AD35632446EE8F005EFBE6 /* AuteurFilmCell.swift */,
 			);
 			path = "Swift05-Auteurs";
 			sourceTree = "<group>";
@@ -229,7 +235,9 @@
 				D9133F95243C7AC600F34BF6 /* Auteur.swift in Sources */,
 				D9133F70243C70C000F34BF6 /* ViewController.swift in Sources */,
 				D9133F6C243C70C000F34BF6 /* AppDelegate.swift in Sources */,
+				D9AD35642446EE8F005EFBE6 /* AuteurFilmCell.swift in Sources */,
 				D9133F91243C741E00F34BF6 /* AuteursListViewController.swift in Sources */,
+				D9AD35622446ED4E005EFBE6 /* AuteurDetailViewController.swift in Sources */,
 				D9133F6E243C70C000F34BF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

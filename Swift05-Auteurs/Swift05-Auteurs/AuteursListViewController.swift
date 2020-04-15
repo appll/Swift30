@@ -24,7 +24,16 @@ class AuteursListViewController: UIViewController {
         auteurs = Auteurs.auteursModel()
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.beginUpdates()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         guard let cell = sender as? AuteursListCell,
+            let indexPath = tableView.indexPath(for: cell),
+            let auteurDetailVC = segue.destination as? AuteurDetailViewController,
+            let auteur = auteurs?.auteurs[indexPath.row] else{
+                return
+        }
+        auteurDetailVC.films = auteur.films
     }
 }
 
@@ -46,12 +55,12 @@ extension AuteursListViewController: UITableViewDataSource, UITableViewDelegate 
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = UIViewController.init()
-        vc.view.backgroundColor = .white
-        vc.title = "111"
-        navigationController?.pushViewController(vc, animated: true)
-    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let vc = UIViewController.init()
+//        vc.view.backgroundColor = .white
+//        vc.title = "111"
+//        navigationController?.pushViewController(vc, animated: true)
+//    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
