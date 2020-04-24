@@ -15,6 +15,9 @@
 		D9257B722452C670007947AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9257B702452C670007947AD /* LaunchScreen.storyboard */; };
 		D9257B7D2452C671007947AD /* TransitionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9257B7C2452C671007947AD /* TransitionDemoTests.swift */; };
 		D9257B882452C7F4007947AD /* ToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9257B872452C7F4007947AD /* ToViewController.swift */; };
+		D9257B922452CCFF007947AD /* AnimationTiltBegin.m in Sources */ = {isa = PBXBuildFile; fileRef = D9257B8E2452CCFF007947AD /* AnimationTiltBegin.m */; };
+		D9257B932452CCFF007947AD /* AnimationTildEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = D9257B8F2452CCFF007947AD /* AnimationTildEnd.m */; };
+		D9257B952452CFF7007947AD /* AnimateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9257B942452CFF7007947AD /* AnimateDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		D9257B7C2452C671007947AD /* TransitionDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionDemoTests.swift; sourceTree = "<group>"; };
 		D9257B7E2452C671007947AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9257B872452C7F4007947AD /* ToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToViewController.swift; sourceTree = "<group>"; };
+		D9257B892452CCB5007947AD /* TransitionDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TransitionDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9257B8E2452CCFF007947AD /* AnimationTiltBegin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTiltBegin.m; sourceTree = "<group>"; };
+		D9257B8F2452CCFF007947AD /* AnimationTildEnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTildEnd.m; sourceTree = "<group>"; };
+		D9257B902452CCFF007947AD /* AnimationTildEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTildEnd.h; sourceTree = "<group>"; };
+		D9257B912452CCFF007947AD /* AnimationTiltBegin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTiltBegin.h; sourceTree = "<group>"; };
+		D9257B942452CFF7007947AD /* AnimateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +90,17 @@
 		D9257B642452C66A007947AD /* TransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D9257B8D2452CCFF007947AD /* animate */,
 				D9257B652452C66A007947AD /* AppDelegate.swift */,
 				D9257B672452C66A007947AD /* SceneDelegate.swift */,
 				D9257B692452C66A007947AD /* ViewController.swift */,
 				D9257B872452C7F4007947AD /* ToViewController.swift */,
+				D9257B942452CFF7007947AD /* AnimateDelegate.swift */,
 				D9257B6B2452C66A007947AD /* Main.storyboard */,
 				D9257B6E2452C670007947AD /* Assets.xcassets */,
 				D9257B702452C670007947AD /* LaunchScreen.storyboard */,
 				D9257B732452C670007947AD /* Info.plist */,
+				D9257B892452CCB5007947AD /* TransitionDemo-Bridging-Header.h */,
 			);
 			path = TransitionDemo;
 			sourceTree = "<group>";
@@ -100,6 +112,17 @@
 				D9257B7E2452C671007947AD /* Info.plist */,
 			);
 			path = TransitionDemoTests;
+			sourceTree = "<group>";
+		};
+		D9257B8D2452CCFF007947AD /* animate */ = {
+			isa = PBXGroup;
+			children = (
+				D9257B912452CCFF007947AD /* AnimationTiltBegin.h */,
+				D9257B8E2452CCFF007947AD /* AnimationTiltBegin.m */,
+				D9257B902452CCFF007947AD /* AnimationTildEnd.h */,
+				D9257B8F2452CCFF007947AD /* AnimationTildEnd.m */,
+			);
+			path = animate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +175,7 @@
 				TargetAttributes = {
 					D9257B612452C66A007947AD = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					D9257B772452C671007947AD = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -203,7 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9257B952452CFF7007947AD /* AnimateDelegate.swift in Sources */,
+				D9257B922452CCFF007947AD /* AnimationTiltBegin.m in Sources */,
 				D9257B6A2452C66A007947AD /* ViewController.swift in Sources */,
+				D9257B932452CCFF007947AD /* AnimationTildEnd.m in Sources */,
 				D9257B662452C66A007947AD /* AppDelegate.swift in Sources */,
 				D9257B682452C66A007947AD /* SceneDelegate.swift in Sources */,
 				D9257B882452C7F4007947AD /* ToViewController.swift in Sources */,
@@ -366,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E3TJ35DM88;
 				INFOPLIST_FILE = TransitionDemo/Info.plist;
@@ -375,6 +403,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lu.Demo.TransitionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TransitionDemo/TransitionDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -384,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E3TJ35DM88;
 				INFOPLIST_FILE = TransitionDemo/Info.plist;
@@ -393,6 +424,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lu.Demo.TransitionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TransitionDemo/TransitionDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

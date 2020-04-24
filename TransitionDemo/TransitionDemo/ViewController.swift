@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -32,7 +32,36 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         let vc = ToViewController.init()
         vc.content = "WoW === \(indexPath.row)"
-        self.navigationController?.pushViewController(vc, animated: true)
+
+//        self.navigationController?.pushViewController(vc, animated: true)
+        if indexPath.row % 2 == 0 {
+            self.navigationController?.lz_pushViewController(vc: vc)
+        } else {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 
+extension UINavigationController {
+    
+    func lz_pushViewController(vc: UIViewController) {
+        let animateDelegate = AnimateDelegate.init()
+        self.delegate = (animateDelegate as UINavigationControllerDelegate)
+        //此处需要将delegate交个目标vc，不然delegate对象会被释放掉，导致返回的动画失效
+        vc.navigationControllerDelegate = animateDelegate
+        self.pushViewController(vc, animated: true)
+    }
+}
+
+extension UIViewController {
+    
+    var navigationControllerDelegate: UINavigationControllerDelegate? {
+        get{
+            return (objc_getAssociatedObject(self, "key") as? UINavigationControllerDelegate)
+        }
+        set {
+            objc_setAssociatedObject(self, "key", newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
+}
