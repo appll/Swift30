@@ -61,7 +61,7 @@ extension AuteurDetailViewController: UITableViewDataSource, UITableViewDelegate
             tableView.beginUpdates()
             tableView.endUpdates()
             //MARK: 滚动选择的cell到顶部
-            tableView .scrollToRow(at: indexPath, at: .top, animated: true)
+            tableView.scrollToRow(at: indexPath, at: .top, animated: true)
         }
     }
 }
