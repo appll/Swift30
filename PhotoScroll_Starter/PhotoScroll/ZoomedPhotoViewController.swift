@@ -30,11 +30,60 @@ import UIKit
 
 class ZoomedPhotoViewController: UIViewController {
   @IBOutlet weak var imageView: UIImageView!
+  @IBOutlet weak var scrollView: UIScrollView!
+  @IBOutlet weak var imageViewLeading: NSLayoutConstraint!
+  @IBOutlet weak var imageViewTrailing: NSLayoutConstraint!
+  @IBOutlet weak var imageViewTop: NSLayoutConstraint!
+  @IBOutlet weak var imageViewBottom: NSLayoutConstraint!
+  
   var photoName: String?
   
   override func viewDidLoad() {
     if let photoName = photoName {
       imageView.image = UIImage(named: photoName)
     }
+    initScale(view.bounds.size)
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    print("viewDidLayoutSubviews imageview bounds : \(imageView.bounds.size) frame : \(imageView.frame.size)")
+  }
+  
+  override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+    print("viewWillLayoutSubviews imageview bounds : \(imageView.bounds.size) frame : \(imageView.frame.size)")
+  }
+  
+  func initScale(_ size: CGSize) {
+    let widthScale = size.width / imageView.bounds.width
+    let heightScale = size.height / imageView.bounds.height
+    let minScale = min(widthScale, heightScale)
+    scrollView.minimumZoomScale = minScale
+    scrollView.zoomScale = minScale
+    //在这里有个奇怪的现象，bounds.size和frame.size居然不一样，目前还未知其原因
+    print("initScale imageview bounds : \(imageView.bounds.size) frame : \(imageView.frame.size)")
+  }
+  
+  func updateScrollViewLayout() {
+    let top = max(0, (view.frame.height - imageView.frame.height) / 2.0)
+    imageViewTop.constant = top
+    imageViewBottom.constant = top
+    
+    let leading = max(0, (view.frame.width - imageView.frame.width) / 2.0)
+    imageViewLeading.constant = leading
+    imageViewTrailing.constant = leading
+    view.layoutIfNeeded()
+    print("updateScrollViewLayout imageview bounds : \(imageView.bounds.size) frame : \(imageView.frame.size)")
+  }
+}
+
+extension ZoomedPhotoViewController: UIScrollViewDelegate {
+  func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+    return imageView
+  }
+  
+  func scrollViewDidZoom(_ scrollView: UIScrollView) {
+    updateScrollViewLayout()
   }
 }
