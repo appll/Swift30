@@ -7,6 +7,7 @@ target 'RACRun' do
 
   # Pods for RACRun
   pod 'ReactiveObjC', '~> 3.1.1'
+  pod 'Masonry', '~> 1.1.0'
   target 'RACRunTests' do
     inherit! :search_paths
     # Pods for testing
