@@ -20,6 +20,9 @@
 		D925A59B251B2E5900FA0D6D /* RACRunUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D925A59A251B2E5900FA0D6D /* RACRunUITests.m */; };
 		D925A5B7251B37D400FA0D6D /* RacSubjectDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = D925A5B6251B37D400FA0D6D /* RacSubjectDelegateController.m */; };
 		D925A5C5251B3D5000FA0D6D /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = D925A5C4251B3D5000FA0D6D /* RedView.m */; };
+		D925A5CB251C462B00FA0D6D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D925A5CA251C462B00FA0D6D /* LoginViewController.m */; };
+		D925A5D1251C4EB000FA0D6D /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D925A5D0251C4EB000FA0D6D /* LoginViewModel.m */; };
+		D925A5D7251C4EF800FA0D6D /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D925A5D6251C4EF800FA0D6D /* AccountModel.m */; };
 		EB76967D64CE7C55433CB392 /* Pods_RACRun_RACRunUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2501D916A371C7B3B2C27CE /* Pods_RACRun_RACRunUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +74,12 @@
 		D925A5B6251B37D400FA0D6D /* RacSubjectDelegateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RacSubjectDelegateController.m; sourceTree = "<group>"; };
 		D925A5C3251B3D5000FA0D6D /* RedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedView.h; sourceTree = "<group>"; };
 		D925A5C4251B3D5000FA0D6D /* RedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
+		D925A5C9251C462B00FA0D6D /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D925A5CA251C462B00FA0D6D /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D925A5CF251C4EB000FA0D6D /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		D925A5D0251C4EB000FA0D6D /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		D925A5D5251C4EF800FA0D6D /* AccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountModel.h; sourceTree = "<group>"; };
+		D925A5D6251C4EF800FA0D6D /* AccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
 		F636E265A2BBE5C91799E4F6 /* Pods-RACRun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACRun.release.xcconfig"; path = "Target Support Files/Pods-RACRun/Pods-RACRun.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +174,12 @@
 				D925A5B6251B37D400FA0D6D /* RacSubjectDelegateController.m */,
 				D925A5C3251B3D5000FA0D6D /* RedView.h */,
 				D925A5C4251B3D5000FA0D6D /* RedView.m */,
+				D925A5C9251C462B00FA0D6D /* LoginViewController.h */,
+				D925A5CA251C462B00FA0D6D /* LoginViewController.m */,
+				D925A5CF251C4EB000FA0D6D /* LoginViewModel.h */,
+				D925A5D0251C4EB000FA0D6D /* LoginViewModel.m */,
+				D925A5D5251C4EF800FA0D6D /* AccountModel.h */,
+				D925A5D6251C4EF800FA0D6D /* AccountModel.m */,
 			);
 			path = RACRun;
 			sourceTree = "<group>";
@@ -424,10 +439,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D925A5D1251C4EB000FA0D6D /* LoginViewModel.m in Sources */,
 				D925A57B251B2E5600FA0D6D /* ViewController.m in Sources */,
 				D925A575251B2E5600FA0D6D /* AppDelegate.m in Sources */,
+				D925A5D7251C4EF800FA0D6D /* AccountModel.m in Sources */,
 				D925A5C5251B3D5000FA0D6D /* RedView.m in Sources */,
 				D925A586251B2E5900FA0D6D /* main.m in Sources */,
+				D925A5CB251C462B00FA0D6D /* LoginViewController.m in Sources */,
 				D925A5B7251B37D400FA0D6D /* RacSubjectDelegateController.m in Sources */,
 				D925A578251B2E5600FA0D6D /* SceneDelegate.m in Sources */,
 			);
